@@ -1,1 +1,12 @@
-<app-gastronomic-culture></app-gastronomic-culture>
+<h1>Culturas Gastronomicas</h1>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col-3">
+      <app-gastronomic-culture (selectedGastronomicCulture)="chooseGastronomicCulture($event)" ></app-gastronomic-culture>
+    </div>
+    <div class="col-9" *ngIf="chosenGastronomicCulture" >
+      <app-recipe [gastronomicCulture]="chosenGastronomicCulture" ></app-recipe>
+    </div>
+  </div>
+</div>

@@ -35,4 +35,8 @@ export class CulturaGastronomica {
   getName(): string {
     return this.name
   }
+
+  getRecipes(): Receta[] {
+    return this.recipes
+  }
 }

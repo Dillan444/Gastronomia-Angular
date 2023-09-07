@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { CulturaGastronomica } from 'src/utils/culturaGastronomica';
 import { gastronomicCultures } from 'src/utils/data';
 
 @Injectable({
@@ -9,6 +10,10 @@ export class GastronomicCultureService {
   constructor() { }
 
   getGastronomicCultures() {
-    return gastronomicCultures.map(gastCult => gastCult.getName())
+    return gastronomicCultures.map(gastCult => gastCult)
+  }
+
+  getRecipesOfGastronomicCulture(gastronomicCulture: CulturaGastronomica) {
+    return gastronomicCulture.getRecipes()
   }
 }

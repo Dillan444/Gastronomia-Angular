@@ -1,6 +1,6 @@
 
-<div class="list-group" *ngFor="let culture of list">
-  <button type="button" class="list-group-item list-group-item-action" aria-current="true">
-    {{ culture }}
+<div class="list-group" *ngFor="let culture of listGastronomicCulture">
+  <button type="button" class="list-group-item list-group-item-action" aria-current="false" [class.active]="selectedCulture === culture" (click)="selectCulture(culture)">
+    {{ culture.getName() }}
   </button>
 </div>

@@ -1,0 +1,20 @@
+<div class="container text-center">
+  <div class="row" *ngIf="recipes.length > 0; else elseTemplate">
+
+    <div class="col" class="recipes-card" *ngFor="let recipe of recipes">
+
+      <div class="card" style="width: 18rem;">
+        <img [src]="recipe.foto" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ recipe.name }}</h5>
+          <p class="card-text">{{ recipe.description }}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #elseTemplate>
+    No hay resultados
+  </ng-template>
+
+</div>
