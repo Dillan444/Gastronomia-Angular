@@ -1,11 +1,11 @@
-<h1>Culturas Gastronomicas</h1>
+<h1 class="text-center title">Culturas Gastronomicas</h1>
 
 <div class="container text-center">
   <div class="row">
     <div class="col-3">
       <app-gastronomic-culture (selectedGastronomicCulture)="chooseGastronomicCulture($event)" ></app-gastronomic-culture>
     </div>
-    <div class="col-9" *ngIf="chosenGastronomicCulture" >
+    <div class="col-9" *ngIf="chosenGastronomicCulture; else elseTemplate" >
       <app-nav (selectedPage)="showPage($event)"></app-nav>
       <div *ngIf="pageActive === 'Recetas'">
         <app-recipe [gastronomicCulture]="chosenGastronomicCulture"></app-recipe>
@@ -18,5 +18,10 @@
       </div>
 
     </div>
+    <ng-template  #elseTemplate>
+      <div class="col-9">
+        <img class="img-fluid" src="https://img.freepik.com/foto-gratis/bienvenido-nuevo-concepto-imagen_23-2150518538.jpg?w=2000" alt="">
+      </div>
+    </ng-template>
   </div>
 </div>

@@ -47,6 +47,24 @@ cultura1.addRecipes(new Receta(
 cultura1.addRecipes(new Receta(
   'receta3', 'Breve descripción de la receta', 'https://media.istockphoto.com/id/944478708/es/foto/par-comer-almuerzo-con-ensaladas-frescas-y-aperitivos.jpg?s=612x612&w=0&k=20&c=0wIH_Kmn-twnYQQJBmjNLl8KnrglSC0aH9xsq1OnICc=', 'Texto donde describe la preparación  de la receta', 'Link del video'
 ))
+cultura2.addRecipes(new Receta(
+  'receta3', 'Breve descripción de la receta', 'https://media.istockphoto.com/id/944478708/es/foto/par-comer-almuerzo-con-ensaladas-frescas-y-aperitivos.jpg?s=612x612&w=0&k=20&c=0wIH_Kmn-twnYQQJBmjNLl8KnrglSC0aH9xsq1OnICc=', 'Texto donde describe la preparación  de la receta', 'Link del video'
+))
+cultura2.addRecipes(new Receta(
+  'receta3', 'Breve descripción de la receta', 'https://media.istockphoto.com/id/944478708/es/foto/par-comer-almuerzo-con-ensaladas-frescas-y-aperitivos.jpg?s=612x612&w=0&k=20&c=0wIH_Kmn-twnYQQJBmjNLl8KnrglSC0aH9xsq1OnICc=', 'Texto donde describe la preparación  de la receta', 'Link del video'
+))
+cultura2.addRecipes(new Receta(
+  'receta3', 'Breve descripción de la receta', 'https://media.istockphoto.com/id/944478708/es/foto/par-comer-almuerzo-con-ensaladas-frescas-y-aperitivos.jpg?s=612x612&w=0&k=20&c=0wIH_Kmn-twnYQQJBmjNLl8KnrglSC0aH9xsq1OnICc=', 'Texto donde describe la preparación  de la receta', 'Link del video'
+))
+cultura2.addRecipes(new Receta(
+  'receta3', 'Breve descripción de la receta', 'https://media.istockphoto.com/id/944478708/es/foto/par-comer-almuerzo-con-ensaladas-frescas-y-aperitivos.jpg?s=612x612&w=0&k=20&c=0wIH_Kmn-twnYQQJBmjNLl8KnrglSC0aH9xsq1OnICc=', 'Texto donde describe la preparación  de la receta', 'Link del video'
+))
+cultura2.addRecipes(new Receta(
+  'receta3', 'Breve descripción de la receta', 'https://media.istockphoto.com/id/944478708/es/foto/par-comer-almuerzo-con-ensaladas-frescas-y-aperitivos.jpg?s=612x612&w=0&k=20&c=0wIH_Kmn-twnYQQJBmjNLl8KnrglSC0aH9xsq1OnICc=', 'Texto donde describe la preparación  de la receta', 'Link del video'
+))
+cultura2.addRecipes(new Receta(
+  'receta3', 'Breve descripción de la receta', 'https://media.istockphoto.com/id/944478708/es/foto/par-comer-almuerzo-con-ensaladas-frescas-y-aperitivos.jpg?s=612x612&w=0&k=20&c=0wIH_Kmn-twnYQQJBmjNLl8KnrglSC0aH9xsq1OnICc=', 'Texto donde describe la preparación  de la receta', 'Link del video'
+))
 
 cultura1.addRestaurant(restaurant1)
 cultura1.addRestaurant(restaurant2)
