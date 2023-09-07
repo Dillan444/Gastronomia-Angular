@@ -1,9 +1,9 @@
 <div class="container text-center">
-  <div class="row" *ngIf="recipes.length > 0; else elseTemplate">
+  <div class="row row-cols-3" *ngIf="recipes.length > 0; else elseTemplate">
 
     <div class="col" class="recipes-card" *ngFor="let recipe of recipes">
 
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 100%;">
         <img [src]="recipe.foto" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{ recipe.name }}</h5>
