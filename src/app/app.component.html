@@ -6,9 +6,17 @@
       <app-gastronomic-culture (selectedGastronomicCulture)="chooseGastronomicCulture($event)" ></app-gastronomic-culture>
     </div>
     <div class="col-9" *ngIf="chosenGastronomicCulture" >
-      <!-- <app-recipe [gastronomicCulture]="chosenGastronomicCulture" ></app-recipe> -->
-      <!-- <app-restaurant [gastronomicCulture]="chosenGastronomicCulture" ></app-restaurant> -->
-      <app-product [gastronomicCulture]="chosenGastronomicCulture"></app-product>
+      <app-nav (selectedPage)="showPage($event)"></app-nav>
+      <div *ngIf="pageActive === 'Recetas'">
+        <app-recipe [gastronomicCulture]="chosenGastronomicCulture"></app-recipe>
+      </div>
+      <div *ngIf="pageActive === 'Restaurantes'">
+        <app-restaurant [gastronomicCulture]="chosenGastronomicCulture" ></app-restaurant>
+      </div>
+      <div *ngIf="pageActive === 'Productos'">
+        <app-product [gastronomicCulture]="chosenGastronomicCulture"></app-product>
+      </div>
+
     </div>
   </div>
 </div>

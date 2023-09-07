@@ -9,8 +9,13 @@ import { CulturaGastronomica } from 'src/utils/culturaGastronomica';
 export class AppComponent {
   title = 'gastronomia';
   chosenGastronomicCulture: CulturaGastronomica | null = null
+  pageActive: string = ''
 
   chooseGastronomicCulture(gastronomicCulture: CulturaGastronomica){
     this.chosenGastronomicCulture = gastronomicCulture
+  }
+
+  showPage(page: string) {
+    this.pageActive = page
   }
 }

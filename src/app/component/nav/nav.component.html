@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [class.active]="pageActive === 'Recetas'" (click)="chancePageActive('Recetas')" aria-current="page" href="#">Recetas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [class.active]="pageActive === 'Restaurantes'" (click)="chancePageActive('Restaurantes')" href="#">Restaurantes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [class.active]="pageActive === 'Productos'" (click)="chancePageActive('Productos')" href="#">Productos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
