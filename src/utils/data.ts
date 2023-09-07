@@ -1,5 +1,7 @@
+import { Category } from "./category";
 import { CulturaGastronomica } from "./culturaGastronomica";
 import { Pais } from "./pais";
+import { Producto } from "./product";
 import { Receta } from "./receta";
 import { Restaurante } from "./restaurante";
 
@@ -50,6 +52,20 @@ cultura1.addRestaurant(restaurant1)
 cultura1.addRestaurant(restaurant2)
 cultura2.addRestaurant(restaurant3)
 cultura3.addRestaurant(restaurant4)
+
+// Products
+cultura1.addProduct(new Producto(
+  'Producto1', "Esta es una descripción del producto", "Historia sobre el producto", new Category('Nombre de una categoría')
+))
+cultura2.addProduct(new Producto(
+  'Producto2', "Esta es una descripción del producto", "Historia sobre el producto", new Category('Nombre de una categoría')
+))
+cultura2.addProduct(new Producto(
+  'Producto3', "Esta es una descripción del producto", "Historia sobre el producto", new Category('Nombre de una categoría')
+))
+cultura2.addProduct(new Producto(
+  'Producto4', "Esta es una descripción del producto", "Historia sobre el producto", new Category('Nombre de una categoría')
+))
 
 gastronomicCultures.push(cultura1, cultura2, cultura3)
 

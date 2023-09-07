@@ -20,4 +20,8 @@ export class GastronomicCultureService {
   getRestaurantsOfGastronomicCulture(gastronomicCulture: CulturaGastronomica) {
     return gastronomicCulture.getRestaurants()
   }
+
+  getProductsOfGastronomicCulture(gastronomicCulture: CulturaGastronomica) {
+    return gastronomicCulture.getProducts()
+  }
 }

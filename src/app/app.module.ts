@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { GastronomicCultureComponent } from './pages/gastronomic-culture/gastronomic-culture.component';
 import { RecipeComponent } from './pages/recipe/recipe.component';
 import { RestaurantComponent } from './pages/restaurant/restaurant.component';
+import { ProductComponent } from './pages/product/product.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { RestaurantComponent } from './pages/restaurant/restaurant.component';
     GastronomicCultureComponent,
     RecipeComponent,
     RestaurantComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,

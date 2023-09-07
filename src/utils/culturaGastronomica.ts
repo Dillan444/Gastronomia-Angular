@@ -1,4 +1,5 @@
 import { Pais } from "./pais"
+import { Producto } from "./product"
 import { Receta } from "./receta"
 import { Restaurante } from "./restaurante"
 
@@ -9,6 +10,7 @@ export class CulturaGastronomica {
 
   recipes: Receta[] = []
   restaurants: Restaurante[] = []
+  products: Producto[] = []
 
   constructor(name: string, description: string, countries: Pais[], recipes?: Receta[]) {
     this.name = name
@@ -32,6 +34,10 @@ export class CulturaGastronomica {
     });
   }
 
+  addProduct(product: Producto){
+    this.products.push(product)
+  }
+
   getName(): string {
     return this.name
   }
@@ -42,5 +48,9 @@ export class CulturaGastronomica {
 
   getRestaurants(): Restaurante[] {
     return this.restaurants
+  }
+
+  getProducts(): Producto[] {
+    return this.products
   }
 }

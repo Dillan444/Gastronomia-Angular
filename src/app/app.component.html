@@ -6,8 +6,9 @@
       <app-gastronomic-culture (selectedGastronomicCulture)="chooseGastronomicCulture($event)" ></app-gastronomic-culture>
     </div>
     <div class="col-9" *ngIf="chosenGastronomicCulture" >
-      <app-recipe [gastronomicCulture]="chosenGastronomicCulture" ></app-recipe>
+      <!-- <app-recipe [gastronomicCulture]="chosenGastronomicCulture" ></app-recipe> -->
       <!-- <app-restaurant [gastronomicCulture]="chosenGastronomicCulture" ></app-restaurant> -->
+      <app-product [gastronomicCulture]="chosenGastronomicCulture"></app-product>
     </div>
   </div>
 </div>
