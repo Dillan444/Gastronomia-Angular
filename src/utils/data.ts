@@ -14,7 +14,10 @@ const marruecos = new Pais('Marruecos')
 const portugal = new Pais('Portugal')
 
 // Restaurants
-const restaurant1 = new Restaurante('restaurante1', 'city', 'country', 4, new Date(2002,4,20))
+const restaurant1 = new Restaurante('Restaurante1', 'city', 'country', 4, new Date(2002,4,20))
+const restaurant2 = new Restaurante('Restaurante2', 'city', 'country', 4, new Date(2002,4,20))
+const restaurant3 = new Restaurante('Restaurante3', 'city', 'country', 4, new Date(2002,4,20))
+const restaurant4 = new Restaurante('Restaurante4', 'city', 'country', 4, new Date(2002,4,20))
 
 
 const cultura1 = new CulturaGastronomica(
@@ -44,6 +47,9 @@ cultura1.addRecipes(new Receta(
 ))
 
 cultura1.addRestaurant(restaurant1)
+cultura1.addRestaurant(restaurant2)
+cultura2.addRestaurant(restaurant3)
+cultura3.addRestaurant(restaurant4)
 
 gastronomicCultures.push(cultura1, cultura2, cultura3)
 

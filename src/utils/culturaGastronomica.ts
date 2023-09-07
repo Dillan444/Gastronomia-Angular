@@ -8,7 +8,7 @@ export class CulturaGastronomica {
   private countries: Pais[] = []
 
   recipes: Receta[] = []
-  restaurant: Restaurante[] = []
+  restaurants: Restaurante[] = []
 
   constructor(name: string, description: string, countries: Pais[], recipes?: Receta[]) {
     this.name = name
@@ -23,7 +23,7 @@ export class CulturaGastronomica {
 
   addRestaurant(restaurant: Restaurante) {
     restaurant.addGastronomicCulture(this)
-    this.restaurant.push(restaurant)
+    this.restaurants.push(restaurant)
   }
 
   addCountries(countries: Pais[]) {
@@ -38,5 +38,9 @@ export class CulturaGastronomica {
 
   getRecipes(): Receta[] {
     return this.recipes
+  }
+
+  getRestaurants(): Restaurante[] {
+    return this.restaurants
   }
 }
